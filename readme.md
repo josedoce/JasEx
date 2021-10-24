@@ -1,4 +1,4 @@
-# JasEx api
+# JasEx api (Comentado para fins de estudo)
 
 ### Aplicação de gerenciamento de entregas.
 
