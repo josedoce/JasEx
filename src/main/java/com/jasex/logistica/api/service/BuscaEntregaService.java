@@ -1,7 +1,6 @@
 package com.jasex.logistica.api.service;
 
 import com.jasex.logistica.api.exception.EntidadeNaoEncontradaException;
-import com.jasex.logistica.api.exception.NegocioException;
 import com.jasex.logistica.domain.model.Entrega;
 import com.jasex.logistica.domain.repository.EntregaRepository;
 

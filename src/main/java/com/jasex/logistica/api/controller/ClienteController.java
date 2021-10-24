@@ -42,10 +42,6 @@ public class ClienteController {
     return clienteRepository.findById(id)
     .map(cliente -> ResponseEntity.status(200).body(cliente))
     .orElse(ResponseEntity.status(404).build());
-    // //com o entity, poderemos responder codigos http...
-    // if(cliente.isPresent())
-    //   return ResponseEntity.status(200).body(cliente.get());
-    // return ResponseEntity.status(404).build();
   }
 
   @PostMapping

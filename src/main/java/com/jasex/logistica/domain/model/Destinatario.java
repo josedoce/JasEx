@@ -7,7 +7,7 @@ import javax.validation.constraints.NotBlank;
 import lombok.Data;
 
 @Data
-@Embeddable //diz que poderá ser embutido em uma tabela.
+@Embeddable
 public class Destinatario {
 
   @NotBlank

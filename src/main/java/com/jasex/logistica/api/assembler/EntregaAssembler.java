@@ -13,10 +13,8 @@ import org.springframework.stereotype.Component;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-@Component //diz que será gerenciado pelo spring
+@Component
 public class EntregaAssembler {
-  //essa classe nos ajudará na manutenção, pois
-  //se quisermos mudar a biblioteca, não ter tanto trabalho
   private ModelMapper modelMapper;
 
   public EntregaModel toModel(Entrega entrega) {

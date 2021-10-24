@@ -1,7 +1,6 @@
 package com.jasex.logistica.api.model.input;
 
 import java.math.BigDecimal;
-import java.time.OffsetDateTime;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;

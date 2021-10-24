@@ -3,7 +3,6 @@ package com.jasex.logistica.api.service;
 import javax.transaction.Transactional;
 
 import com.jasex.logistica.domain.model.Entrega;
-import com.jasex.logistica.domain.model.StatusEntrega;
 import com.jasex.logistica.domain.repository.EntregaRepository;
 
 import org.springframework.stereotype.Service;

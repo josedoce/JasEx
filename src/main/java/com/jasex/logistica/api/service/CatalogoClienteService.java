@@ -15,22 +15,11 @@ public class CatalogoClienteService {
   
   private ClienteRepository clienteRepository;
 
-
   public Cliente buscar(Long id) {
     return clienteRepository.findById(id)
     .orElseThrow(()->new NegocioException("Cliente não encontrado")); 
   }
-  /**
-   * @Transactional declara que o metodo deve
-   * ser executado dentro de uma transação...
-   * Isso assegura que se algo der errado neste metodo
-   * alterações serão descartadas no banco de dados.
-   * 
-   * Termo leigo para descrever isso: Ou tudo ou nada...
-   * 
-   * OBS->Só é necessário ser for para salvar ou 
-   * excluir dados no banco de dados.
-  */
+
   @Transactional
   public Cliente salvar(Cliente cliente){
     boolean emailInUse = clienteRepository
@@ -47,6 +36,5 @@ public class CatalogoClienteService {
   public void excluir(Long id) {
     clienteRepository.deleteById(id);
   }
-
 
 }

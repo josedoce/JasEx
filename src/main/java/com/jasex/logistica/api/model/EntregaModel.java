@@ -1,5 +1,4 @@
 package com.jasex.logistica.api.model;
-//Usando o padrão DTO aqui...
 
 import java.math.BigDecimal;
 import java.time.OffsetDateTime;
